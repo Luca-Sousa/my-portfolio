@@ -40,7 +40,6 @@ const Projects = () => {
             linkVercel={project.linkVercel}
             title={project.title}
             description={project.description}
-            position={project.position}
           />
         ))}
         {visibleProjects < ProjectsData.length && (

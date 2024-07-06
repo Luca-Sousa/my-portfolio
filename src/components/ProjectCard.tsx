@@ -8,7 +8,6 @@ interface ProjectCardProps {
   linkVercel: string;
   title: string;
   description: string;
-  position: string;
 }
 
 const ProjectCard = ({
@@ -17,12 +16,11 @@ const ProjectCard = ({
   linkVercel,
   title,
   description,
-  position,
 }: ProjectCardProps) => {
   return (
     <div className="columns-1 h-[500px] rounded-2xl relative group">
       <img
-        className={`w-full h-full object-100-100 object-${position} group-hover:scale-105 rounded-2xl`}
+        className={`w-full h-full object-100-100 group-hover:scale-105 rounded-2xl`}
         src={image}
         alt={title}
       />
@@ -52,7 +50,7 @@ const ProjectCard = ({
                 <div className="flex items-center gap-6 px-4">
                   <img
                     className="w-8 h-8"
-                    src="../../public/svgs/icon_vercel.svg"
+                    src="/src/assets/svgs/icon_vercel.svg"
                     alt=""
                   />
                   <p className="uppercase font-medium">Vercel</p>

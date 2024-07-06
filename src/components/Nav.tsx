@@ -1,6 +1,7 @@
 import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import imgLogo from "/src/assets/images/imgs_perfil/logo.png";
 
 const Nav = () => {
   const [active, setActive] = useState("home");
@@ -13,11 +14,7 @@ const Nav = () => {
     <div className="max-w-[1300px] mx-auto text-lg text-white bg-colorBlack font-PrimaryFont uppercase shadow-boxShadowNav">
       <nav className="h-20 flex justify-between items-center">
         <div className="flex items-center gap-8">
-          <img
-            className="w-20 h-20"
-            src="../../public/images/imgs_perfil/logo.png"
-            alt=""
-          />
+          <img className="w-20 h-20" src={imgLogo} alt="Image Logo" />
           <h2 className="font-medium tracking-widest text-2xl">Lucas</h2>
         </div>
         <ul className="h-full flex gap-10 mr-24 items-center group text-base font-medium">

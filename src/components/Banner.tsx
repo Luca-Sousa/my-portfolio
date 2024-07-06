@@ -7,6 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import ButtonSMIcons from "./ButtonSMIBanner";
+import imgPerfil from "/src/assets/images/imgs_perfil/perfil-lucas.png"
 
 const Banner = () => {
   return (
@@ -48,7 +49,7 @@ const Banner = () => {
       <div className="h-full flex items-center justify-center basis-2/5">
         <img
           className="h-4/6 rounded-full ring-8 ring-colorPrimary"
-          src="../../public/images/imgs_perfil/perfil-lucas.png"
+          src={imgPerfil}
           alt="Banner Image Perfil"
         />
       </div>
