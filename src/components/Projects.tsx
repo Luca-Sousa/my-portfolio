@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectsData from "./ProjectsData.json";
+import ProjectsData from "./ProjectsData";
 import Button from "./ButtonDefault";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,6 +1,7 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import iconVercel from "/src/assets/svgs/icon_vercel.svg";
 
 interface ProjectCardProps {
   image: string;
@@ -48,11 +49,7 @@ const ProjectCard = ({
             <a href={linkVercel} target="_blank">
               <button className="w-full flex items-center justify-between rounded-lg overflow-hidden bg-cyan-600 hover:scale-105 hover:shadow-boxShadowProjectCard">
                 <div className="flex items-center gap-6 px-4">
-                  <img
-                    className="w-8 h-8"
-                    src="/src/assets/svgs/icon_vercel.svg"
-                    alt=""
-                  />
+                  <img className="w-8 h-8" src={iconVercel} alt="" />
                   <p className="uppercase font-medium">Vercel</p>
                 </div>
                 <div className="w-14 h-14 flex items-center justify-center bg-colorRating">
