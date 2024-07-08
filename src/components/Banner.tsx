@@ -7,7 +7,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import ButtonSMIcons from "./ButtonSMIBanner";
-import imgPerfil from "/src/assets/images/imgs_perfil/perfil-lucas.png"
+import imgPerfil from "/src/assets/images/imgs_perfil/perfil-lucas.png";
 
 const Banner = () => {
   return (

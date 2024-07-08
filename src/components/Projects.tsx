@@ -6,11 +6,11 @@ import { faCirclePlus, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
-  const [visibleProjects, setVisibleProjects] = useState(4);
+  const [visibleProjects, setVisibleProjects] = useState(3);
   const [searchProj, setSearchProj] = useState("");
 
   const showMoreProjects = () => {
-    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 4);
+    setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 3);
   };
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -29,8 +29,10 @@ const Projects = () => {
       <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline">
         Projects
       </h2>
-      <p className="text-3xl text-colorWhite capitalize">
-        projetos desenvolvidos usando os designs da plataforma{" "}
+      <p className="text-2xl text-colorWhite">
+        Aqui você encontrará uma coleção diversificada dos meus projetos
+        de Desenvolvimento Frontend. Esta seleção inclui tanto trabalhos
+        pessoais quanto projetos realizados em plataformas como{" "}
         <a
           className="font-bold text-colorPrimary hover:underline"
           href="https://www.frontendmentor.io"
@@ -38,7 +40,17 @@ const Projects = () => {
         >
           Frontend Mentor
         </a>
-        .
+        , onde desenvolvi aplicações web a partir dos designs disponibilizados,
+        e{" "}
+        <a
+          className="font-bold text-colorPrimary hover:underline"
+          href="https://cursos.dankicode.com/"
+          target="_blank"
+        >
+          Danki Code
+        </a>
+        , onde apliquei ferramentas avançadas para aprimorar ainda mais cada
+        projeto.
       </p>
 
       <div className="px-8 pt-5 pb-20 bg-cyan-800 rounded-3xl space-y-6">
@@ -53,14 +65,14 @@ const Projects = () => {
         </div>
 
         {filteredProjects.length === 0 ? (
-          <div className="h-[500px] text-white">
+          <div className="h-[780px] text-white">
             <div className="flex items-center gap-2">
-            <FontAwesomeIcon icon={faCircleXmark} />
-            <h2 className="uppercase">Nenhum Projeto encontrado!</h2>
+              <FontAwesomeIcon icon={faCircleXmark} />
+              <h2 className="uppercase">Nenhum Projeto encontrado!</h2>
             </div>
           </div>
         ) : (
-          <div className="grid grid-cols-4 gap-x-10 gap-y-16">
+          <div className="grid grid-cols-3 gap-x-10 gap-y-16">
             {filteredProjects
               .slice(0, visibleProjects)
               .map((project, index) => (
@@ -72,6 +84,7 @@ const Projects = () => {
                   title={project.title}
                   description={project.description}
                   tagProj={project.tagProj}
+                  tagLink={project.tagLink}
                 />
               ))}
             {visibleProjects < filteredProjects.length && (
@@ -79,7 +92,7 @@ const Projects = () => {
                 onClick={showMoreProjects}
                 title="Mostrar Mais"
                 icon={faCirclePlus}
-                className="col-span-4 mx-auto rounded-lg"
+                className="col-span-3 mx-auto rounded-lg"
               />
             )}
           </div>
