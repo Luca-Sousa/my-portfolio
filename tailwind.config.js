@@ -22,7 +22,8 @@ export default {
       },
       boxShadow: {
         boxShadowNav: 'rgb(38, 57, 77) 0px 20px 30px -10px',
-        boxShadowProjectCard: 'rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px'
+        boxShadowProjectCard: 'rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px',
+        swTags: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'
       },
       backgroundImage: {
         bgBanner: 'url("/src/assets/images/banner.jpg")',

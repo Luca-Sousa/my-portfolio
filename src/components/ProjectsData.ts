@@ -12,6 +12,7 @@ const ProjectsData = [
     title: "Article Preview Component",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de praticar as habilidades de layout com a criação de um componente de pré-visualização de artigo.",
+    tagProj: "Frontend Mentor"
   },
   {
     image: projectImage2,
@@ -21,6 +22,7 @@ const ProjectsData = [
     title: "Base Apparel Coming Soon Page",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar um layout simples, mas com detalhes para testar as habilidades em CSS, e praticar validação básica de formulários.",
+    tagProj: "Pessoal"
   },
   {
     image: projectImage3,
@@ -31,6 +33,7 @@ const ProjectsData = [
     title: "Sunnyside Agency Landing Page",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, com foco principalmente em HTML e CSS.",
+    tagProj: "Danki Code"
   },
   {
     image: projectImage4,
@@ -41,7 +44,9 @@ const ProjectsData = [
     title: "Intro Section With Dropdown Navigation",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma seção de introdução com navegação suspensa.",
+    tagProj: "Frontend Mentor"
   },
+  
 ];
 
 export default ProjectsData;

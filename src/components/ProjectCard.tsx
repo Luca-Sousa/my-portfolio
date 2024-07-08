@@ -1,5 +1,5 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import iconVercel from "/src/assets/svgs/icon_vercel.svg";
 
@@ -9,6 +9,7 @@ interface ProjectCardProps {
   linkVercel: string;
   title: string;
   description: string;
+  tagProj: string;
 }
 
 const ProjectCard = ({
@@ -17,6 +18,7 @@ const ProjectCard = ({
   linkVercel,
   title,
   description,
+  tagProj,
 }: ProjectCardProps) => {
   return (
     <div className="columns-1 h-[500px] rounded-2xl relative group">
@@ -59,6 +61,11 @@ const ProjectCard = ({
             </a>
           </div>
         </div>
+      </div>
+
+      <div className={`${(tagProj == "Danki Code" && `bg-red-500`)} ${(tagProj == "Pessoal" && `bg-blue-500`)} ${(tagProj == "Frontend Mentor" && `bg-green-500 w-3/5`)} absolute w-3/5 h-8 ml-auto inset-0 top-[97%] -translate-y-[97%] right-0 flex items-center justify-center gap-3 rounded-s-2xl text-white shadow-swTags group-hover:hidden`}>
+        <FontAwesomeIcon icon={faTag} />
+        <p className="text-sm font-PrimaryFont font-semibold">{tagProj}</p>
       </div>
     </div>
   );
