@@ -49,6 +49,40 @@ const ProjectsData = [
     tagProj: "Frontend Mentor",
     tagLink: "https://www.frontendmentor.io",
   },
+  {
+    image: projectImage4,
+    linkGithub:
+      "https://github.com/Luca-Sousa/Project-Intro-Section-With-Dropdown-Navigation-Main",
+    linkVercel:
+      "https://project-intro-section-with-dropdown-navigation-main.vercel.app/",
+    title: "Intro Section With Dropdown Navigation",
+    description:
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma seção de introdução com navegação suspensa.",
+    tagProj: "Rocketseat",
+    tagLink: "https://www.frontendmentor.io",
+  },
+  {
+    image: projectImage2,
+    linkGithub:
+      "https://github.com/Luca-Sousa/Project-Base-Apparel-Coming-Soon-Master",
+    linkVercel: "https://project-base-apparel-coming-soon-master.vercel.app/",
+    title: "Base Apparel Coming Soon Page",
+    description:
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar um layout simples, mas com detalhes para testar as habilidades em CSS, e praticar validação básica de formulários.",
+    tagProj: "React",
+  },
+  {
+    image: projectImage3,
+    linkGithub:
+      "https://github.com/Luca-Sousa/Project-Sunnyside-Agency-Landing-Page-Main",
+    linkVercel:
+      "https://project-sunnyside-agency-landing-page-main.vercel.app/",
+    title: "Sunnyside Agency Landing Page",
+    description:
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, com foco principalmente em HTML e CSS.",
+    tagProj: "Dev em Dobro",
+    tagLink: "https://cursos.dankicode.com/",
+  },
 ];
 
 export default ProjectsData;

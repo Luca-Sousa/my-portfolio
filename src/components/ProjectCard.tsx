@@ -1,7 +1,9 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faArrowRight, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import iconVercel from "/src/assets/svgs/icon_vercel.svg";
+import { ArrowRight, Tag } from "lucide-react";
+import { ButtonTags } from "./ButtonTags";
+import { ButtonLinks } from "./ButtonLinks";
 
 interface ProjectCardProps {
   image: string;
@@ -23,64 +25,58 @@ const ProjectCard = ({
   tagLink,
 }: ProjectCardProps) => {
   return (
-    <div className="columns-1 max-h-[780px] rounded-2xl overflow-hidden bg-color">
-      <div className="w-full overflow-hidden">
+    <div className="columns-1 max-h-[780px] rounded-2xl overflow-hidden bg-colorBg">
+      <div className="overflow-hidden relative group">
         <img
-          className="object-100-100 hover:object-cover hover:scale-110"
+          className="object-100-100 group-hover:scale-110"
           src={image}
           alt={title}
         />
+        <div className="absolute inset-0 bg-zinc-950/15 group-hover:hidden"></div>
       </div>
 
-      <div className="w-full">
-        <div className="text-center p-8 text-white">
-          <div className="space-y-3 mb-4">
-            <h2 className="text-xl font-extrabold font-PrimaryFont">Projeto</h2>
-            <a
-              href={tagLink}
-              target="_blank"
-              className={`${tagProj == "Danki Code" && `bg-red-500`} ${
-                tagProj == "Pessoal" && `bg-lime-500`
-              } ${tagProj == "Frontend Mentor" && `bg-blue-500`} ${
-                tagLink !== undefined && `hover:scale-110 cursor-pointer`
-              } w-3/5 mx-auto h-8 flex items-center justify-center gap-3 rounded-2xl shadow-swTags`}
-            >
-              <FontAwesomeIcon icon={faTag} />
-              <p className="text-sm font-PrimaryFont font-semibold">
-                {tagProj}
-              </p>
-            </a>
-          </div>
-          <h2 className="min-h-16 text-xl font-extrabold font-PrimaryFont text-colorPrimary uppercase">
-            {title}
+      <div className="text-center p-6">
+        <div className="space-y-3 mb-4">
+          <h2 className="text-zinc-100 text-xl font-extrabold font-PrimaryFont">
+            Projeto
           </h2>
-          <p className="min-h-36 text-base font-secondaryFont">{description}</p>
+          <ButtonTags
+            tagLink={tagLink}
+            tagProj={tagProj}
+          >
+            <Tag className="size-5" />
+            <p className="text-sm font-PrimaryFont">{tagProj}</p>
+          </ButtonTags>
+        </div>
 
-          <div className="flex flex-col gap-5">
-            <a href={linkGithub} target="_blank">
-              <button className="w-[90%] mx-auto flex items-center justify-between rounded-lg overflow-hidden bg-cyan-600 hover:scale-105 hover:shadow-boxShadowProjectCard">
-                <div className="flex items-center gap-6 px-4">
-                  <FontAwesomeIcon icon={faGithub} className="w-8 h-8" />
-                  <p className="uppercase font-medium">Github</p>
-                </div>
-                <div className="w-14 h-14 flex items-center justify-center bg-colorRating">
-                  <FontAwesomeIcon icon={faArrowRight} className="w-5 h-7" />
-                </div>
-              </button>
-            </a>
+        <h2 className="min-h-16 text-xl font-extrabold font-PrimaryFont text-colorPrimary uppercase">
+          {title}
+        </h2>
 
-            <a href={linkVercel} target="_blank">
-              <button className="w-[90%] mx-auto flex items-center justify-between rounded-lg overflow-hidden bg-cyan-600 hover:scale-105 hover:shadow-boxShadowProjectCard">
-                <div className="flex items-center gap-6 px-4">
-                  <img className="w-8 h-8" src={iconVercel} alt="" />
-                  <p className="uppercase font-medium">Vercel</p>
-                </div>
-                <div className="w-14 h-14 flex items-center justify-center bg-colorRating">
-                  <FontAwesomeIcon icon={faArrowRight} className="w-5 h-7" />
-                </div>
-              </button>
-            </a>
-          </div>
+        <p className="min-h-36 text-zinc-400 font-secondaryFont">
+          {description}
+        </p>
+
+        <div className="flex flex-col gap-3">
+          <ButtonLinks link={linkGithub}>
+            <div className="flex items-center gap-6 px-4">
+              <FontAwesomeIcon icon={faGithub} className="size-8" />
+              Github
+            </div>
+            <div className="size-14 flex items-center justify-center bg-orange-400">
+              <ArrowRight />
+            </div>
+          </ButtonLinks>
+
+          <ButtonLinks link={linkVercel}>
+            <div className="flex items-center gap-6 px-4">
+              <img className="size-8" src={iconVercel} alt="Icon Vercel" />
+              Vercel
+            </div>
+            <div className="size-14 flex items-center justify-center bg-orange-400">
+              <ArrowRight />
+            </div>
+          </ButtonLinks>
         </div>
       </div>
     </div>

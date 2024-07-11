@@ -1,9 +1,8 @@
-import { faUserTie } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import imgLogo from "/src/assets/images/imgs_perfil/logo.png";
+import { Contact } from "lucide-react";
 
-const Nav = () => {
+export function Nav() {
   const [active, setActive] = useState("home");
 
   const handleClick = (page: string) => {
@@ -11,19 +10,20 @@ const Nav = () => {
   };
 
   return (
-    <div className="max-w-[1300px] mx-auto text-lg text-white bg-colorBlack font-PrimaryFont uppercase shadow-boxShadowNav">
+    <div className="max-w-[1300px] mx-auto bg-zinc-900 font-PrimaryFont font-medium uppercase shadow-shape">
       <nav className="h-20 flex justify-between items-center">
         <div className="flex items-center gap-8">
-          <img className="w-20 h-20" src={imgLogo} alt="Image Logo" />
-          <h2 className="font-medium tracking-widest text-2xl">Lucas</h2>
+          <img className="size-20" src={imgLogo} alt="Image Logo" />
+          <h2 className="text-zinc-100 tracking-widest text-2xl">Lucas</h2>
         </div>
-        <ul className="h-full flex gap-10 mr-24 items-center group text-base font-medium">
+
+        <ul className="h-full flex items-center gap-12">
           <li
             onClick={() => handleClick("home")}
             className={`${
               active == "home"
                 ? "h-full text-colorPrimary border-b-4 border-colorPrimary"
-                : "text-colorWhite border-b-0"
+                : "text-zinc-100 border-b-0"
             } hover:text-colorPrimary flex items-center`}
           >
             <a href="/">Home</a>
@@ -33,7 +33,7 @@ const Nav = () => {
             className={`${
               active == "projetos"
                 ? "h-full text-colorPrimary border-b-4 border-colorPrimary"
-                : "text-colorWhite border-b-0"
+                : "text-zinc-100 border-b-0"
             } hover:text-colorPrimary flex items-center`}
           >
             <a href="#projetos">Projetos</a>
@@ -43,7 +43,7 @@ const Nav = () => {
             className={`${
               active == "sobre"
                 ? "h-full text-colorPrimary border-b-4 border-colorPrimary"
-                : "text-colorWhite border-b-0"
+                : "text-zinc-100 border-b-0"
             } hover:text-colorPrimary flex items-center`}
           >
             <a href="#sobre">Sobre</a>
@@ -53,21 +53,17 @@ const Nav = () => {
             className={`${
               active == "contato"
                 ? "h-full text-colorPrimary border-b-4 border-colorPrimary"
-                : "text-colorWhite border-b-0"
+                : "text-zinc-100 border-b-0"
             } hover:text-colorPrimary flex items-center`}
           >
             <a href="#sobre">Contato</a>
           </li>
         </ul>
-        <div className="h-20 w-20 flex items-center justify-center bg-colorPrimary">
-          <FontAwesomeIcon
-            icon={faUserTie}
-            className="w-8 h-8 hover:scale-125 text-colorBlack"
-          />
+
+        <div className="size-20 flex items-center justify-center bg-colorPrimary">
+          <Contact className="size-7 cursor-pointer text-zinc-900 hover:scale-125" />
         </div>
       </nav>
     </div>
   );
-};
-
-export default Nav;
+}

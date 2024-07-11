@@ -1,19 +1,20 @@
-import Banner from "./components/Banner";
-import Nav from "./components/Nav";
-import Projects from "./components/Projects";
+import { Banner } from "./components/Banner";
+import { Nav } from "./components/Nav";
+import { Projects } from "./components/Projects";
 
 function App() {
   return (
-    <div className="w-full bg-bgColor scroll-none">
-      <div className="min-h-screen h-full w-full bg-bgBanner bg-cover bg-right">
-        <div className="fixed top-0 w-full z-10">
+    <div className="w-full">
+      <div className="h-screen w-full bg-bgBanner bg-cover">
+        <div className="fixed w-full z-50">
           <Nav />
         </div>
-        <div className="h-screen">
+        <div className="h-full">
           <Banner />
         </div>
       </div>
-      <div className="z-0">
+
+      <div>
         <Projects />
       </div>
     </div>
