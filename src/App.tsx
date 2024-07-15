@@ -7,8 +7,8 @@ import { Projects } from "./components/Projects";
 function App() {
   return (
     <div className="w-full">
-      <div className="h-screen w-full bg-bgBanner bg-cover">
-        <div className="fixed w-full z-50">
+      <div className="h-screen w-full bg-bgBanner bg-cover md:h-fit">
+        <div className="fixed w-full z-50 md:static">
           <Nav />
         </div>
         <div className="h-full">
