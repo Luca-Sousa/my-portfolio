@@ -1,4 +1,6 @@
+import { About } from "./components/About";
 import { Banner } from "./components/Banner";
+import { Contact } from "./components/Contact";
 import { Nav } from "./components/Nav";
 import { Projects } from "./components/Projects";
 
@@ -16,6 +18,14 @@ function App() {
 
       <div>
         <Projects />
+      </div>
+
+      <div>
+        <About />
+      </div>
+
+      <div className="">
+        <Contact />
       </div>
     </div>
   );

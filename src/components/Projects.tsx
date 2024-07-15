@@ -29,7 +29,7 @@ export function Projects() {
 
   return (
     <div
-      className="max-w-[1300px] h-full mx-auto space-y-10 py-8 bg-colorBodyBg"
+      className="max-w-[1300px] xl:px-6 h-full mx-auto space-y-10 py-8 bg-colorBodyBg"
       id="projetos"
     >
       <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline">
@@ -65,7 +65,7 @@ export function Projects() {
           <DropdownButton tags={uniqueTags} onSelectTag={handleSelectTag} />
         </div>
 
-        <div className="grid grid-cols-3 gap-x-10 gap-y-16">
+        <div className="h-full grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-x-10 gap-y-16 md:w-4/5 md:mx-auto xs:w-full">
           {filteredProjects.slice(0, visibleProjects).map((project, index) => (
             <ProjectCard
               key={index}
@@ -82,7 +82,7 @@ export function Projects() {
           {visibleProjects < filteredProjects.length && (
             <Button
               onClick={showMoreProjects}
-              className="col-span-3 mx-auto rounded-lg"
+              className="col-span-3 mx-auto rounded-lg lg:col-span-2 md:col-span-1"
             >
               Mostrar Mais
               <CirclePlus className="size-6" />

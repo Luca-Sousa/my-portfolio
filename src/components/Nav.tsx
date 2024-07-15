@@ -56,7 +56,7 @@ export function Nav() {
                 : "text-zinc-100 border-b-0"
             } hover:text-colorPrimary flex items-center`}
           >
-            <a href="#sobre">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
 

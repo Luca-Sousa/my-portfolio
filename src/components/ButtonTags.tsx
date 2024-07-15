@@ -34,6 +34,7 @@ const tagVariants = tv({
   defaultVariants: {
     hoverEffect: false,
   },
+  
 });
 
 interface TagProps
