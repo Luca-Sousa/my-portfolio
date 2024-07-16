@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <div className="max-w-[1300px] h-fit mx-auto space-y-10 pt-8" id="contato">
       <div className="space-y-10 xl:px-6">
-        <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline">
+        <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline lg:text-3xl sm:text-2xl">
           Contato
         </h2>
         <p className="text-xl text-zinc-100">

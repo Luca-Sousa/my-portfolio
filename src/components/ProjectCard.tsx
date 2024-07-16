@@ -4,7 +4,7 @@ import iconVercel from "/src/assets/svgs/icon_vercel.svg";
 import { ButtonTags } from "./ButtonTags";
 import { ButtonLinks } from "./ButtonLinks";
 import { useState } from "react";
-import { ArrowRight, Tag, X } from "lucide-react";
+import { ArrowRight, Tag, X, ZoomIn } from "lucide-react";
 
 interface ProjectCardProps {
   image: string;
@@ -40,22 +40,34 @@ const ProjectCard = ({
     <div className="flex flex-col columns-1 max-h-[780px] rounded-2xl overflow-hidden bg-colorBg">
       <div className="overflow-hidden relative group" onClick={handleOpenModal}>
         <img
-          className="object-100-100 group-hover:scale-110"
+          className="object-100-100 group-hover:scale-110 group-hover:cursor-pointer"
           src={image}
           alt={title}
         />
+        <ZoomIn className="size-10 text-zinc-950 hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block group-hover:cursor-pointer" />
         <div className="absolute inset-0 bg-zinc-950/15 flex items-center justify-center group-hover:hidden"></div>
 
         {isOpenModal && (
-          <div className="fixed inset-0 bg-zinc-700/60 flex items-center justify-center z-50">
-            <div className="max-w-4xl relative rounded-xl overflow-hidden">
+          <div className="fixed inset-0 bg-zinc-950/70 flex items-center justify-center z-50">
+            <div className="max-w-fit relative rounded-3xl bg-zinc-700 overflow-hidden shadow-boxShadowProjectCard">
               <button
                 className="absolute top-4 right-4 w-full flex justify-end"
                 onClick={handleCloseModal}
               >
-                <X className="size-10 rounded-full text-white bg-emerald-500 hover:scale-125" />
+                <X className="size-8 rounded-full text-white bg-emerald-500 hover:bg-emerald-600 hover:scale-105" />
               </button>
-              <img src={image} alt={title} />
+
+              <img className="max-h-[500px] lg:max-h-[400px] sm:max-h-80 2xs:max-h-60" src={image} alt={title} />
+
+              <div className="p-4 space-y-4 max-w-xl mx-auto text-center lg:max-w-lg sm:max-w-sm 2xs:max-w-80">
+                <h2 className="text-xl font-extrabold font-PrimaryFont text-colorPrimary uppercase">
+                  {title}
+                </h2>
+
+                <p className="text-zinc-200 font-secondaryFont">
+                  {description}
+                </p>
+              </div>
             </div>
           </div>
         )}

@@ -32,11 +32,11 @@ export function Projects() {
       className="max-w-[1300px] xl:px-6 h-full mx-auto space-y-10 py-8 bg-colorBodyBg"
       id="projetos"
     >
-      <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline">
-        Projects
+      <h2 className="text-4xl font-semibold font-PrimaryFont text-colorPrimary uppercase underline lg:text-3xl sm:text-2xl">
+        Projetos
       </h2>
 
-      <p className="text-2xl text-zinc-100">
+      <p className="text-2xl text-zinc-100 lg:text-xl sm:text-base 2xs:text-sm">
         Aqui você encontrará uma coleção diversificada dos meus projetos de
         Desenvolvimento Frontend. Esta seleção inclui tanto trabalhos pessoais
         quanto projetos realizados em plataformas como{" "}
