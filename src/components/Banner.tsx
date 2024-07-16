@@ -8,6 +8,7 @@ import {
 import { ButtonSMIcons } from "./ButtonIcons";
 import imgPerfil from "/src/assets/images/imgs_perfil/perfil-lucas.png";
 import { Download } from "lucide-react";
+import { motion } from "framer-motion";
 
 export function Banner() {
   return (
@@ -15,7 +16,18 @@ export function Banner() {
       <div className="flex flex-col justify-center gap-12 flex-1 md:items-center md:text-center md:order-2">
         <h2 className="text-5xl font-bold leading-tight uppercase font-PrimaryFont xl:text-4xl">
           Hi, Eu Sou Lucas Sousa! <br /> Desenvolvedor{" "}
-          <span className="text-colorPrimary">Front-End</span>
+          <motion.span
+            className="text-colorPrimary inline-block"
+            animate={{ rotateX: 90 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "linear",
+              duration: 1.5,
+            }}
+          >
+            FrontEnd
+          </motion.span>
         </h2>
 
         <p className="max-w-2xl text-lg text-zinc-400 font-medium font-secondaryFont xl:max-w-xl lg:text-base">
@@ -54,7 +66,7 @@ export function Banner() {
 
       <div className="h-full flex items-center justify-center md:order-1">
         <img
-          className="h-4/6 rounded-full ring-8 ring-colorPrimary lg:h-3/6 md:h-72"
+          className="h-4/6 rounded-full border-8 border-colorPrimary lg:h-3/6 md:h-72"
           src={imgPerfil}
           alt="Banner Image Perfil"
         />

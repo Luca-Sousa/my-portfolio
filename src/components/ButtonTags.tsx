@@ -10,7 +10,6 @@ const generateTagVariants = () => {
     "Danki Code": "bg-red-500",
     Pessoal: "bg-lime-500",
     "Frontend Mentor": "bg-blue-500",
-    "Rocketseat": "bg-yellow-500",
   };
 
   const variants = uniqueTags.reduce((acc, tag) => {
