@@ -24,7 +24,8 @@ const ProjectsData = [
     title: "Base Apparel Coming Soon Page",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar um layout simples, mas com detalhes para testar as habilidades em CSS, e praticar validação básica de formulários.",
-    tagProj: "Pessoal",
+    tagProj: "Frontend Mentor",
+    tagLink: "https://www.frontendmentor.io",
   },
   {
     image: projectImage3,
@@ -35,8 +36,8 @@ const ProjectsData = [
     title: "Sunnyside Agency Landing Page",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, com foco principalmente em HTML e CSS.",
-    tagProj: "Danki Code",
-    tagLink: "https://cursos.dankicode.com/",
+    tagProj: "Frontend Mentor",
+    tagLink: "https://www.frontendmentor.io",
   },
   {
     image: projectImage4,
