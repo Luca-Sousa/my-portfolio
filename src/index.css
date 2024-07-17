@@ -25,24 +25,24 @@ html,body{
     border-radius: 5px;
 }
 
-/* .slick-slide > div{
+.slick-slide > div{
     display: flex !important;
-    padding: 0 0.75rem;
+    padding: 0 2rem;
 }
 
 .slick-slider .slick-arrow:before {
-    color: #22d3ee;
+    color: #55e6a5;
     font-size: 2.5rem;
     margin: 0 -20px;
   }
   
   .slick-slider .slick-dots button:before {
     font-size: 1.3rem;
-    color: #22d3ee;
+    color: #55e6a5;
   }
   
   .slick-slider .slick-dots li.slick-active button::before {
-    color: #22d3ee;
+    color: #55e6a5;
   }
   .slick-slider .slick-dots {
     bottom: -44px;
@@ -50,4 +50,4 @@ html,body{
   
   .slick-slider .slick-dots li {
     margin: 0 0.5rem;
-  } */
+  }

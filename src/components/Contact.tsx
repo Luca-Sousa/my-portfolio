@@ -40,7 +40,7 @@ export function Contact() {
 
             <Button className="w-1/2 rounded-2xl mt-6 2xs:w-full">
               Enviar Mensagem
-              <MessageCircle className="size-6" />
+              <MessageCircle className="size-6 group-hover:text-colorPrimary" />
             </Button>
           </div>
         </div>

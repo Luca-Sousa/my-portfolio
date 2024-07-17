@@ -85,7 +85,7 @@ export function Projects() {
               className="col-span-3 mx-auto rounded-lg lg:col-span-2 md:col-span-1"
             >
               Mostrar Mais
-              <CirclePlus className="size-6" />
+              <CirclePlus className="size-6 group-hover:text-colorPrimary" />
             </Button>
           )}
         </div>

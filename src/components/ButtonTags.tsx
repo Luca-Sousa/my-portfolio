@@ -26,7 +26,7 @@ const tagVariants = tv({
   variants: {
     tagProj: generateTagVariants(),
     hoverEffect: {
-      true: "hover:scale-105 cursor-pointer",
+      true: "hover:scale-105 cursor-pointer transition duration-300 ease-in-out",
     },
   },
 

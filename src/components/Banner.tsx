@@ -31,16 +31,18 @@ export function Banner() {
         </h2>
 
         <p className="max-w-2xl text-lg text-zinc-400 font-medium font-secondaryFont xl:max-w-xl lg:text-base">
-          I'm a passionate UI/UX designer with a mission to create delightful
-          and intuitive digital experiences. With a strong foundation in design
-          principles and a keen eye for detail, I specialize in translating
-          complex ideas into user-friendly interfaces that captivate and engage.
+          Sou um desenvolvedor FrontEnd com a missão de criar experiências
+          digitais agradáveis e intuitivas. Estou sempre me desafiando com novos
+          projetos e buscando feedback na comunidade de programação, além de
+          compartilhar meus conhecimentos. Atualmente, estou em busca do meu
+          primeiro trabalho como desenvolvedor FrontEnd. Meu objetivo é se
+          tornar desenvolvedor Full-Stack.
         </p>
 
         <div className="flex items-center gap-20 mt-6 xl:gap-16 lg:flex-col lg:gap-10 md:gap-6 md:mt-0">
           <Button>
             Download Cv
-            <Download className="size-6" />
+            <Download className="size-6 group-hover:text-colorPrimary" />
           </Button>
 
           <ul className="h-full flex items-center gap-4">
