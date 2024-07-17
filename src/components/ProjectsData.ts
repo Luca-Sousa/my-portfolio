@@ -2,6 +2,7 @@ import projectImage1 from "/src/assets/images/imgs_projects/Project-Article-Prev
 import projectImage2 from "/src/assets/images/imgs_projects/Project-Base-Apparel-Coming-Soon-Master-Desktop-Preview.jpg";
 import projectImage3 from "/src/assets/images/imgs_projects/Project-Sunnyside-Agency-Landing-Page-Main-Desktop-Preview.jpg";
 import projectImage4 from "/src/assets/images/imgs_projects/Project-Intro-Section-With-Dropdown-Navigation-Main-Desktop-Preview.jpg";
+import projectImage5 from "/src/assets/images/imgs_projects/Project-Intro-Component-With-Signup-Form-Master-Preview.jpg";
 
 const ProjectsData = [
   {
@@ -50,38 +51,16 @@ const ProjectsData = [
     tagLink: "https://www.frontendmentor.io",
   },
   {
-    image: projectImage4,
+    image: projectImage5,
     linkGithub:
-      "https://github.com/Luca-Sousa/Project-Intro-Section-With-Dropdown-Navigation-Main",
+      "https://github.com/Luca-Sousa/Project-Intro-Component-With-Signup-Form-Master",
     linkVercel:
-      "https://project-intro-section-with-dropdown-navigation-main.vercel.app/",
-    title: "Intro Section With Dropdown Navigation",
+      "https://project-intro-component-with-signup-form-master.vercel.app/",
+    title: "Intro Component With Signup Form",
     description:
-      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma seção de introdução com navegação suspensa.",
-    tagProj: "Rocketseat",
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, e praticar validação básica de formulários.",
+    tagProj: "Frontend Mentor",
     tagLink: "https://www.frontendmentor.io",
-  },
-  {
-    image: projectImage2,
-    linkGithub:
-      "https://github.com/Luca-Sousa/Project-Base-Apparel-Coming-Soon-Master",
-    linkVercel: "https://project-base-apparel-coming-soon-master.vercel.app/",
-    title: "Base Apparel Coming Soon Page",
-    description:
-      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar um layout simples, mas com detalhes para testar as habilidades em CSS, e praticar validação básica de formulários.",
-    tagProj: "React",
-  },
-  {
-    image: projectImage3,
-    linkGithub:
-      "https://github.com/Luca-Sousa/Project-Sunnyside-Agency-Landing-Page-Main",
-    linkVercel:
-      "https://project-sunnyside-agency-landing-page-main.vercel.app/",
-    title: "Sunnyside Agency Landing Page",
-    description:
-      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, com foco principalmente em HTML e CSS.",
-    tagProj: "Dev em Dobro",
-    tagLink: "https://cursos.dankicode.com/",
   },
 ];
 

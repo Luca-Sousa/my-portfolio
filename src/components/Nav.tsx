@@ -41,7 +41,7 @@ export function Nav() {
       <nav className="h-20 flex justify-between items-center sm:flex-col sm:h-36 sm:py-2">
         <div className="flex items-center gap-8">
           <img
-            className="size-20 sm:rounded-full sm:size-14"
+            className="size-20 sm:rounded-full sm:size-14 pointer-events-none"
             src={imgLogo}
             alt="Image Logo"
           />

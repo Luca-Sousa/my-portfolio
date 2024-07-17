@@ -51,7 +51,7 @@ export function About() {
 
       <div className="text-center flex items-center gap-10 lg:flex-col">
         <img
-          className="w-2/5 h-auto mx-auto mb-8 lg:w-1/2 md:hidden"
+          className="w-2/5 h-auto mx-auto mb-8 lg:w-1/2 md:hidden pointer-events-none"
           src={imgAbout}
           alt="Image About"
         />

@@ -36,7 +36,7 @@ export function Projects() {
         Projetos
       </h2>
 
-      <p className="text-2xl text-zinc-100 lg:text-xl sm:text-base 2xs:text-sm">
+      <p className="text-2xl text-zinc-100 lg:text-xl sm:text-base">
         Aqui você encontrará uma coleção diversificada dos meus projetos de
         Desenvolvimento Frontend. Esta seleção inclui tanto trabalhos pessoais
         quanto projetos realizados em plataformas como{" "}

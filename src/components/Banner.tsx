@@ -68,7 +68,7 @@ export function Banner() {
 
       <div className="h-full flex items-center justify-center md:order-1">
         <img
-          className="h-4/6 rounded-full border-8 border-colorPrimary lg:h-3/6 md:h-72"
+          className="h-4/6 rounded-full border-8 border-colorPrimary lg:h-3/6 md:h-72 pointer-events-none"
           src={imgPerfil}
           alt="Banner Image Perfil"
         />

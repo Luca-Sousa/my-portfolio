@@ -21,7 +21,7 @@ const generateTagVariants = () => {
 };
 
 const tagVariants = tv({
-  base: "w-3/5 mx-auto h-8 flex items-center justify-center gap-3 rounded-2xl shadow-swTags text-zinc-900 font-semibold",
+  base: "px-4 mx-auto h-8 flex items-center justify-center gap-3 rounded-2xl shadow-swTags text-zinc-900 font-semibold",
 
   variants: {
     tagProj: generateTagVariants(),
