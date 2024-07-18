@@ -15,18 +15,9 @@ function App() {
           <Banner />
         </div>
       </div>
-
-      <div>
-        <Projects />
-      </div>
-
-      <div>
-        <About />
-      </div>
-
-      <div className="">
-        <Contact />
-      </div>
+      <Projects />
+      <About />
+      <Contact />
     </div>
   );
 }

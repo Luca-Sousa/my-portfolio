@@ -12,9 +12,9 @@ export function Contact() {
           Entre em contato ou envie-me um e-mail diretamente para{" "}
           <a
             className="font-bold text-colorPrimary hover:underline"
-            href="mailto:lucas2015366@gmail.com"
+            href="mailto:luke.sousa.dev@gmail.com"
           >
-            lucas2015366@gmail.com
+            luke.sousa.dev@gmail.com
           </a>
         </p>
       </div>

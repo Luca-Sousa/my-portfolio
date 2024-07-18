@@ -24,30 +24,3 @@ html,body{
     background: #55e6a5;
     border-radius: 5px;
 }
-
-.slick-slide > div{
-    display: flex !important;
-    padding: 0 2rem;
-}
-
-.slick-slider .slick-arrow:before {
-    color: #55e6a5;
-    font-size: 2.5rem;
-    margin: 0 -20px;
-  }
-  
-  .slick-slider .slick-dots button:before {
-    font-size: 1.3rem;
-    color: #55e6a5;
-  }
-  
-  .slick-slider .slick-dots li.slick-active button::before {
-    color: #55e6a5;
-  }
-  .slick-slider .slick-dots {
-    bottom: -44px;
-  }
-  
-  .slick-slider .slick-dots li {
-    margin: 0 0.5rem;
-  }
