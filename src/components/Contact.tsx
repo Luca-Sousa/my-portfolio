@@ -12,7 +12,7 @@ export function Contact() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await fetch("/src/api/SendEmail.ts", {
+      const response = await fetch("/api/SendEmail.ts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
