@@ -1,9 +1,9 @@
 import { useState } from "react";
-import ProjectCard from "./ProjectCard";
-import ProjectsData from "./ProjectsData";
-import { Button } from "./Button";
+import ProjectCard from "../components/ProjectCard";
+import ProjectsData from "../components/ProjectsData";
+import { Button } from "../components/Button";
 import { CirclePlus } from "lucide-react";
-import { DropdownButton } from "./ButtonFilterDropdown";
+import { DropdownButton } from "../components/ButtonFilterDropdown";
 
 export function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(3);

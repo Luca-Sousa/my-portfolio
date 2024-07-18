@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
-import { Button } from "./Button";
+import { Button } from "../components/Button";
 import emailjs from "emailjs-com";
-import { MessageEmailSend } from "./MessageEmailSend";
+import { MessageEmailSend } from "../components/MessageEmailSend";
 import { AnimatePresence, motion } from "framer-motion";
 
 export function Contact() {
@@ -22,7 +22,7 @@ export function Contact() {
         "service_5894apa", // Service ID
         "template_acmy4nx", // Template ID
         formData,
-        "vGQ35hBLrqA9E8JZU" // ID
+        "vGQ35hBLrqA9E8JZU" // Public Key
       );
       if (response.status === 200) {
         setSuccessMessage("Mensagem enviada com sucesso!");
