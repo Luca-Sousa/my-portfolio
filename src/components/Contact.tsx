@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./Button";
+import emailjs from "emailjs-com";
+import { MessageEmailSend } from "./MessageEmailSend";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -8,21 +11,33 @@ export function Contact() {
     email: "",
     message: "",
   });
+  const [successMessage, setSuccessMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsLoading(true);
     try {
-      const response = await fetch("api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      const result = await response.json();
-      alert(result.message);
+      const response = await emailjs.send(
+        "service_5894apa", // Service ID
+        "template_acmy4nx", // Template ID
+        formData,
+        "vGQ35hBLrqA9E8JZU" // ID
+      );
+      if (response.status === 200) {
+        setSuccessMessage("Mensagem enviada com sucesso!");
+        setTimeout(() => {
+          setSuccessMessage("");
+          setFormData({ name: "", email: "", message: "" });
+        }, 3000);
+      } else {
+        alert("Falha ao enviar mensagem");
+      }
     } catch (error) {
+      console.error("Erro ao enviar mensagem:", error);
       alert("Falha ao enviar mensagem");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -77,13 +92,30 @@ export function Contact() {
               }
             ></textarea>
 
-            <Button className="w-1/2 rounded-2xl mt-6 2xs:w-full">
-              Enviar Mensagem
+            <Button
+              type="submit"
+              className={`w-1/2 rounded-2xl mt-6 2xs:w-full ${isLoading ? "cursor-wait" : ""}`}
+            >
+              {isLoading ? "Enviando..." : "Enviar Mensagem"}
               <MessageCircle className="size-6 group-hover:text-colorPrimary" />
             </Button>
           </div>
         </div>
       </form>
+
+      <AnimatePresence>
+        {successMessage && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.5 }}
+            className="fixed inset-x-0 top-4 mx-auto max-w-md z-50"
+          >
+            <MessageEmailSend message={successMessage} />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
