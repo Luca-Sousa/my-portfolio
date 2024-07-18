@@ -113,7 +113,7 @@ export function Contact() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -50 }}
             transition={{ duration: 0.5 }}
-            className="fixed inset-x-0 top-4 mx-auto max-w-md z-50"
+            className="fixed inset-x-0 top-4 mx-auto max-w-md xs:max-w-sm z-50"
           >
             <MessageEmailSend message={successMessage} />
           </motion.div>
