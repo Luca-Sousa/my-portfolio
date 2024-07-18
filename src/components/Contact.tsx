@@ -97,7 +97,9 @@ export function Contact() {
 
             <Button
               type="submit"
-              className={`w-1/2 rounded-2xl mt-6 2xs:w-full ${isLoading ? "cursor-wait" : ""}`}
+              className={`w-1/2 rounded-2xl mt-6 2xs:w-full ${
+                isLoading ? "cursor-wait" : ""
+              }`}
             >
               {isLoading ? "Enviando..." : "Enviar Mensagem"}
               <MessageCircle className="size-6 group-hover:text-colorPrimary" />
