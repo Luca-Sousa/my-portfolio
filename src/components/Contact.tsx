@@ -72,6 +72,7 @@ export function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
               }
+              required
             />
             <input
               className="w-full p-4 rounded-xl outline-none border-none bg-zinc-300 placeholder:text-zinc-800 text-lg font-medium focus:placeholder:text-zinc-950"
@@ -81,6 +82,7 @@ export function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, email: e.target.value })
               }
+              required
             />
             <textarea
               className="w-full  p-4 h-40 rounded-xl outline-none border-none resize-none bg-zinc-300 placeholder:text-zinc-800 text-lg font-medium focus:placeholder:text-zinc-950"
@@ -90,6 +92,7 @@ export function Contact() {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
+              required
             ></textarea>
 
             <Button
