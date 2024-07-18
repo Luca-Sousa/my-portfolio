@@ -1,6 +1,6 @@
+import { useState } from "react";
 import { MessageCircle } from "lucide-react";
 import { Button } from "./Button";
-import { useState } from "react";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -12,7 +12,7 @@ export function Contact() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await fetch("/api/sendEmail", { // Corrigido o caminho do endpoint para a função serverless na Vercel
+      const response = await fetch("api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -22,8 +22,7 @@ export function Contact() {
       const result = await response.json();
       alert(result.message);
     } catch (error) {
-      alert("Failed to send message");
-      console.error(error);
+      alert("Falha ao enviar mensagem");
     }
   };
 

@@ -6,21 +6,21 @@ const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   auth: {
-    user: process.env.EMAIL_USER!, // Variável de ambiente para o e-mail
-    pass: process.env.EMAIL_PASSWORD!, // Variável de ambiente para a senha
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
   },
 });
 
 export default async (req: VercelRequest, res: VercelResponse) => {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method not allowed" });
+    return res.status(405).json({ message: "Método não permitido" });
   }
 
   const { name, email, message } = req.body;
 
   const mailOptions = {
     from: email,
-    to: process.env.EMAIL_TO!, // Variável de ambiente para o e-mail de recebimento
+    to: process.env.GMAIL_TO,
     subject: `Nova mensagem de ${name}`,
     text: message,
   };
