@@ -12,7 +12,7 @@ export function Contact() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-      const response = await fetch("/api/SendEmail.ts", {
+      const response = await fetch("/api/sendEmail", { // Corrigido o caminho do endpoint para a função serverless na Vercel
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,6 +23,7 @@ export function Contact() {
       alert(result.message);
     } catch (error) {
       alert("Failed to send message");
+      console.error(error);
     }
   };
 
