@@ -1,23 +1,24 @@
-import projectImage1 from "/src/assets/images/imgs_projects/Project-Article-Preview-Component-Master-Desktop-Preview.jpg";
-import projectImage2 from "/src/assets/images/imgs_projects/Project-Base-Apparel-Coming-Soon-Master-Desktop-Preview.jpg";
-import projectImage3 from "/src/assets/images/imgs_projects/Project-Sunnyside-Agency-Landing-Page-Main-Desktop-Preview.jpg";
-import projectImage4 from "/src/assets/images/imgs_projects/Project-Intro-Section-With-Dropdown-Navigation-Main-Desktop-Preview.jpg";
-import projectImage5 from "/src/assets/images/imgs_projects/Project-Intro-Component-With-Signup-Form-Master-Preview.jpg";
+import projectArticlePreviewComponent from "/src/assets/images/imgs_projects/Project-Article-Preview-Component-Master-Desktop-Preview.jpg";
+import projectBaseApparel from "/src/assets/images/imgs_projects/Project-Base-Apparel-Coming-Soon-Master-Desktop-Preview.jpg";
+import projectSunnysideAgency from "/src/assets/images/imgs_projects/Project-Sunnyside-Agency-Landing-Page-Main-Desktop-Preview.jpg";
+import projectIntroSectionDropdown from "/src/assets/images/imgs_projects/Project-Intro-Section-With-Dropdown-Navigation-Main-Desktop-Preview.jpg";
+import projectIntroComponent from "/src/assets/images/imgs_projects/Project-Intro-Component-With-Signup-Form-Master-Preview.jpg";
+import projectProductList from "../assets/images/imgs_projects/Project-Product-List-With-Cart-Main.jpg"
 
 const ProjectsData = [
   {
-    image: projectImage1,
+    image: projectProductList,
     linkGithub:
-      "https://github.com/Luca-Sousa/Project-Article-Preview-Component-Master",
-    linkVercel: "https://project-article-preview-component-master.vercel.app/",
-    title: "Article Preview Component",
+      "https://github.com/Luca-Sousa/Project-Product-List-With-Cart-Main",
+    linkVercel: "https://project-product-list-with-cart-main.vercel.app/",
+    title: "Product List With Cart Main",
     description:
-      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de praticar as habilidades de layout com a criação de um componente de pré-visualização de artigo.",
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de criar uma lista de produtos que inclua um carrinho funcional e adicionar todos os dados de cada produto.",
     tagProj: "Frontend Mentor",
     tagLink: "https://www.frontendmentor.io",
   },
   {
-    image: projectImage2,
+    image: projectBaseApparel,
     linkGithub:
       "https://github.com/Luca-Sousa/Project-Base-Apparel-Coming-Soon-Master",
     linkVercel: "https://project-base-apparel-coming-soon-master.vercel.app/",
@@ -28,7 +29,7 @@ const ProjectsData = [
     tagLink: "https://www.frontendmentor.io",
   },
   {
-    image: projectImage3,
+    image: projectSunnysideAgency,
     linkGithub:
       "https://github.com/Luca-Sousa/Project-Sunnyside-Agency-Landing-Page-Main",
     linkVercel:
@@ -40,7 +41,7 @@ const ProjectsData = [
     tagLink: "https://www.frontendmentor.io",
   },
   {
-    image: projectImage4,
+    image: projectIntroSectionDropdown,
     linkGithub:
       "https://github.com/Luca-Sousa/Project-Intro-Section-With-Dropdown-Navigation-Main",
     linkVercel:
@@ -52,7 +53,7 @@ const ProjectsData = [
     tagLink: "https://www.frontendmentor.io",
   },
   {
-    image: projectImage5,
+    image: projectIntroComponent,
     linkGithub:
       "https://github.com/Luca-Sousa/Project-Intro-Component-With-Signup-Form-Master",
     linkVercel:
@@ -60,6 +61,17 @@ const ProjectsData = [
     title: "Intro Component With Signup Form",
     description:
       "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de Criar uma landing page, e praticar validação básica de formulários.",
+    tagProj: "Frontend Mentor",
+    tagLink: "https://www.frontendmentor.io",
+  },
+  {
+    image: projectArticlePreviewComponent,
+    linkGithub:
+      "https://github.com/Luca-Sousa/Project-Article-Preview-Component-Master",
+    linkVercel: "https://project-article-preview-component-master.vercel.app/",
+    title: "Article Preview Component",
+    description:
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de praticar as habilidades de layout com a criação de um componente de pré-visualização de artigo.",
     tagProj: "Frontend Mentor",
     tagLink: "https://www.frontendmentor.io",
   },
