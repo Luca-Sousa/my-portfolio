@@ -9,6 +9,7 @@ import { ButtonSMIcons } from "./ButtonIcons";
 import imgPerfil from "/src/assets/images/imgs_perfil/perfil-lucas.png";
 import { Download } from "lucide-react";
 import { motion } from "framer-motion";
+import Curriculo from "../assets/Currículo - Lucas de Sousa Silva.pdf"
 
 export function Banner() {
   return (
@@ -40,7 +41,7 @@ export function Banner() {
         </p>
 
         <div className="flex items-center gap-20 mt-6 xl:gap-16 lg:flex-col lg:gap-10 md:gap-6 md:mt-0">
-          <Button>
+          <Button downloadLink={Curriculo}>
             Download Cv
             <Download className="size-6 group-hover:text-colorPrimary" />
           </Button>
