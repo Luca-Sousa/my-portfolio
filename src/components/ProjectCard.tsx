@@ -129,7 +129,7 @@ const ProjectCard = ({
           </ButtonTags>
         </div>
 
-        <h2 className="min-h-14 text-xl font-extrabold font-PrimaryFont text-colorPrimary uppercase line-clamp-2">
+        <h2 className="min-h-14 text-xl font-extrabold font-PrimaryFont text-colorPrimary capitalize line-clamp-2">
           {title}
         </h2>
 

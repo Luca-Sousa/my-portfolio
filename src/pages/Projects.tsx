@@ -80,13 +80,15 @@ export function Projects() {
           ))}
 
           {visibleProjects < filteredProjects.length && (
-            <Button
-              onClick={showMoreProjects}
-              className="col-span-3 mx-auto rounded-lg lg:col-span-2 md:col-span-1"
-            >
-              Mostrar Mais
-              <CirclePlus className="size-6 group-hover:text-colorPrimary" />
-            </Button>
+            <div className="col-span-3 lg:col-span-2 md:col-span-1">
+              <Button
+                onClick={showMoreProjects}
+                className="mx-auto rounded-lg"
+              >
+                Mostrar Mais
+                <CirclePlus className="size-6 group-hover:text-colorPrimary" />
+              </Button>
+            </div>
           )}
         </div>
       </div>

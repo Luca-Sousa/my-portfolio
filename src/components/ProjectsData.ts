@@ -4,8 +4,20 @@ import projectSunnysideAgency from "/src/assets/images/imgs_projects/Project-Sun
 import projectIntroSectionDropdown from "/src/assets/images/imgs_projects/Project-Intro-Section-With-Dropdown-Navigation-Main-Desktop-Preview.jpg";
 import projectIntroComponent from "/src/assets/images/imgs_projects/Project-Intro-Component-With-Signup-Form-Master-Preview.jpg";
 import projectProductList from "../assets/images/imgs_projects/Project-Product-List-With-Cart-Main.jpg"
+import ProjectEcommerceProduct from "../assets/images/imgs_projects/Project-Ecommerce-Product-Page-Main.jpg"
 
 const ProjectsData = [
+  {
+    image: ProjectEcommerceProduct,
+    linkGithub:
+      "https://github.com/Luca-Sousa/Project-Ecommerce-Product-Page-Main",
+    linkVercel: "https://project-ecommerce-product-page-main.vercel.app/",
+    title: "Ecommerce Product Page Main",
+    description:
+      "Projeto desenvolvido através do site Frontend Mentor. Com o objetivo de criar uma página de produto de comércio eletrônico, com implementações de Galeria lightbox, Carrinho de compra, Slide de imagens e etc.",
+    tagProj: "Frontend Mentor",
+    tagLink: "https://www.frontendmentor.io",
+  },
   {
     image: projectProductList,
     linkGithub:
